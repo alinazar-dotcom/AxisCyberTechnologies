@@ -1,5 +1,5 @@
 {
-      "name": "Axis Cyber Technologies Landing Page (Copy)",
+      "name": "axis-cyber-technologies",
       "version": "0.1.0",
       "private": true,
       "dependencies": {
@@ -29,7 +29,6 @@
             "@radix-ui/react-toggle": "^1.1.2",
             "@radix-ui/react-toggle-group": "^1.1.2",
             "@radix-ui/react-tooltip": "^1.1.8",
-            "@supabase/auth-helpers-nextjs": "*",
             "@supabase/supabase-js": "*",
             "@tailwindcss/vite": "^4.1.18",
             "autoprefixer": "^10.4.23",
@@ -41,7 +40,6 @@
             "handlebars": "^4.7.8",
             "input-otp": "^1.4.2",
             "lucide-react": "^0.487.0",
-            "next": "*",
             "next-themes": "^0.4.6",
             "postcss": "^8.5.6",
             "react": "^18.3.1",
