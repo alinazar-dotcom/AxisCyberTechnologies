@@ -1,0 +1,396 @@
+@import "tailwindcss";
+
+@theme {
+  --color-neon-purple: #DD00FF;
+  --color-neon-cyan: #00FFFF;
+  --color-neon-pink: #FF0099;
+  --color-neon-green: #00FF9D;
+  --color-neon-orange: #FF7A00;
+
+  --color-brand-cyan: #00E5FF;
+  --color-brand-magenta: #B900FF;
+  --color-brand-orange: #FF7A00;
+
+  --color-bg-primary: #05060A;
+  --color-bg-secondary: #0A0A14;
+  --color-bg-tertiary: #0D0D1A;
+
+  --color-border: rgba(0, 229, 255, 0.15);
+}
+
+@layer base {
+  :root {
+    /* Backgrounds - Deep space theme */
+    --bg-primary: #0B0D14;
+    --bg-secondary: #12161E;
+    --bg-elevated: #1A1F2E;
+    --bg-card: #151923;
+
+    /* Text colors */
+    --text-primary: #FFFFFF;
+    --text-secondary: #B8C5D6;
+    --text-muted: #7B8BA3;
+
+    /* Brand colors - Cyber theme with your original palette */
+    --cyan-primary: #00E5FF;
+    --cyan-secondary: #00B8D4;
+    --magenta-primary: #B900FF;
+    --magenta-secondary: #9500D1;
+    --orange-primary: #FF7A00;
+    --orange-secondary: #E66A00;
+
+    /* Accent system */
+    --accent-cyan: #00E5FF;
+    --accent-magenta: #B900FF;
+    --accent-orange: #FF7A00;
+    --accent-success: #00FF9D;
+
+    /* Borders and dividers */
+    --border-subtle: rgba(0, 229, 255, 0.08);
+    --border-medium: rgba(0, 229, 255, 0.15);
+    --border-strong: rgba(0, 229, 255, 0.25);
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-[var(--bg-primary)] text-[var(--text-primary)];
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  /* Cyber-themed link styles */
+  .footer-link {
+    @apply text-[var(--text-secondary)] hover:text-[var(--accent-cyan)] transition-all duration-300 inline-block hover:translate-x-1;
+  }
+
+  /* Gradient text utility */
+  .gradient-text-cyber {
+    @apply bg-gradient-to-r from-[var(--accent-cyan)] via-[var(--accent-magenta)] to-[var(--accent-orange)] bg-clip-text text-transparent;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: 'Space Grotesk', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  }
+
+  h1 {
+    font-size: 2rem;
+    line-height: 1.1;
+    font-weight: 700;
+  }
+
+  @media (min-width: 768px) {
+    h1 {
+      font-size: 3.5rem;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    h1 {
+      font-size: 4.5rem;
+    }
+  }
+
+  h2 {
+    font-size: 1.75rem;
+    line-height: 1.2;
+    font-weight: 700;
+  }
+
+  @media (min-width: 768px) {
+    h2 {
+      font-size: 2.5rem;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    h2 {
+      font-size: 3rem;
+    }
+  }
+
+  h3 {
+    font-size: 1.5rem;
+    line-height: 1.3;
+    font-weight: 600;
+  }
+
+  @media (min-width: 768px) {
+    h3 {
+      font-size: 1.75rem;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    h3 {
+      font-size: 2rem;
+    }
+  }
+
+  h4 {
+    font-size: 1.25rem;
+    line-height: 1.4;
+    font-weight: 600;
+  }
+
+  @media (min-width: 768px) {
+    h4 {
+      font-size: 1.375rem;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    h4 {
+      font-size: 1.5rem;
+    }
+  }
+
+  p {
+    font-size: 1rem;
+    line-height: 1.7;
+    color: var(--neutral-light);
+  }
+
+  @media (min-width: 768px) {
+    p {
+      font-size: 1.0625rem;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    p {
+      font-size: 1.125rem;
+    }
+  }
+
+  /* Neon Cyberpunk Animations */
+  @keyframes floatParticle {
+
+    0%,
+    100% {
+      transform: translate(0, 0) scale(1);
+      opacity: 0.8;
+    }
+
+    25% {
+      transform: translate(10px, -15px) scale(1.1);
+      opacity: 1;
+    }
+
+    50% {
+      transform: translate(-5px, -25px) scale(0.9);
+      opacity: 0.9;
+    }
+
+    75% {
+      transform: translate(-15px, -10px) scale(1.05);
+      opacity: 0.95;
+    }
+  }
+
+  @keyframes scanDown {
+    0% {
+      transform: translateY(-100%);
+    }
+
+    100% {
+      transform: translateY(100vh);
+    }
+  }
+
+  @keyframes scanRight {
+    0% {
+      transform: translateX(-100%);
+    }
+
+    100% {
+      transform: translateX(100vw);
+    }
+  }
+
+  @keyframes borderFlow {
+    0% {
+      background-position: 0% 50%;
+    }
+
+    100% {
+      background-position: 200% 50%;
+    }
+  }
+
+  @keyframes float {
+
+    0%,
+    100% {
+      transform: translateY(0px) rotate(0deg);
+    }
+
+    50% {
+      transform: translateY(-20px) rotate(2deg);
+    }
+  }
+
+  @keyframes morph {
+
+    0%,
+    100% {
+      border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+    }
+
+    50% {
+      border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%;
+    }
+  }
+
+  @keyframes spin {
+    from {
+      transform: rotate(0deg);
+    }
+
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+  @keyframes gridPulse {
+
+    0%,
+    100% {
+      opacity: 0.6;
+    }
+
+    50% {
+      opacity: 0.9;
+    }
+  }
+
+  @keyframes dataFlow {
+    0% {
+      transform: translateY(-100%);
+      opacity: 0;
+    }
+
+    10% {
+      opacity: 1;
+    }
+
+    90% {
+      opacity: 1;
+    }
+
+    100% {
+      transform: translateY(100%);
+      opacity: 0;
+    }
+  }
+
+  @keyframes shimmer {
+    0% {
+      transform: translateX(-100%);
+    }
+
+    100% {
+      transform: translateX(100%);
+    }
+  }
+
+  @keyframes buttonParticleBurst {
+    0% {
+      transform: translate(-50%, -50%) rotate(var(--rotation, 0deg)) translateY(0px);
+      opacity: 0;
+    }
+
+    20% {
+      opacity: 1;
+    }
+
+    100% {
+      transform: translate(-50%, -50%) rotate(var(--rotation, 0deg)) translateY(-30px);
+      opacity: 0;
+    }
+  }
+
+  /* Badge utilities */
+  .badge-cyan {
+    @apply inline-flex items-center gap-1.5 px-2 py-1 md:px-3 md:py-1.5 text-xs md:text-sm font-bold rounded-full border border-[var(--neon-cyan)] bg-[var(--neon-cyan)] text-[var(--neon-cyan)] transition-all duration-300;
+    border-color: color-mix(in oklab, var(--neon-cyan) 30%, transparent);
+    background-color: color-mix(in oklab, var(--neon-cyan) 10%, transparent);
+  }
+
+  .badge-purple {
+    @apply inline-flex items-center gap-1.5 px-2 py-1 md:px-3 md:py-1.5 text-xs md:text-sm font-bold rounded-full border border-[var(--neon-purple)] bg-[var(--neon-purple)] text-[var(--neon-purple)] transition-all duration-300;
+    border-color: color-mix(in oklab, var(--neon-purple) 30%, transparent);
+    background-color: color-mix(in oklab, var(--neon-purple) 10%, transparent);
+  }
+
+  .badge-pink {
+    @apply inline-flex items-center gap-1.5 px-2 py-1 md:px-3 md:py-1.5 text-xs md:text-sm font-bold rounded-full border border-[var(--neon-pink)] bg-[var(--neon-pink)] text-[var(--neon-pink)] transition-all duration-300;
+    border-color: color-mix(in oklab, var(--neon-pink) 30%, transparent);
+    background-color: color-mix(in oklab, var(--neon-pink) 10%, transparent);
+  }
+
+  .badge-green {
+    @apply inline-flex items-center gap-1.5 px-2 py-1 md:px-3 md:py-1.5 text-xs md:text-sm font-bold rounded-full border border-[var(--neon-green)] bg-[var(--neon-green)] text-[var(--neon-green)] transition-all duration-300;
+    border-color: color-mix(in oklab, var(--neon-green) 30%, transparent);
+    background-color: color-mix(in oklab, var(--neon-green) 10%, transparent);
+  }
+
+}
+
+/* Enhanced Cyberpunk Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(11, 13, 20, 0.5);
+  border-radius: 100px;
+  margin: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #DD00FF 0%, #00FFFF 100%);
+  border-radius: 100px;
+  border: 2px solid rgba(11, 13, 20, 0.8);
+  box-shadow: 0 0 10px rgba(221, 0, 255, 0.3);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(180deg, #FF0099 0%, #00E5FF 100%);
+  box-shadow: 0 0 15px rgba(0, 255, 255, 0.5);
+}
+
+/* Specific class for tighter areas */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 5px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: transparent;
+  margin: 2px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: linear-gradient(to bottom, #DD00FF, #00FFFF);
+  box-shadow: 0 0 8px rgba(0, 255, 255, 0.2);
+}
+
+/* Firefox support */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #00FFFF rgba(11, 13, 20, 0.5);
+}

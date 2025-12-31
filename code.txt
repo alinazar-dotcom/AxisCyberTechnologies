@@ -1,0 +1,899 @@
+import { Brain, Blocks, Code2, Cloud, Smartphone, Gamepad2, Shield, Database, Sparkles, Zap, Cpu, Network, CheckCircle2, ArrowRight, Users, Clock, Award, TrendingUp, Lightbulb, Target, Building2, Rocket, Star } from 'lucide-react';
+import { useState } from 'react';
+import { Link } from 'react-router-dom';
+
+export function ServicesPage() {
+  const [activeService, setActiveService] = useState(0);
+
+  const services = [
+    {
+      icon: Brain,
+      title: 'AI & Machine Learning',
+      tagline: 'Intelligent automation at scale',
+      description: 'Transform your business with production-ready AI solutions that deliver measurable results. We build custom machine learning models, integrate cutting-edge AI technologies, and deploy intelligent automation systems that drive real business value.',
+      link: '/services/ai-ml',
+      features: [
+        'Custom ML Model Development & Training',
+        'Natural Language Processing (NLP)',
+        'Computer Vision & Image Recognition',
+        'Predictive Analytics & Forecasting',
+        'Generative AI & LLM Integration',
+        'AI-Powered Automation Workflows',
+        'Neural Network Architecture Design',
+        'Model Optimization & Fine-tuning'
+      ],
+      technologies: ['TensorFlow', 'PyTorch', 'OpenAI', 'Hugging Face', 'scikit-learn', 'LangChain', 'Stable Diffusion', 'Claude'],
+      process: [
+        { step: 'Discovery', desc: 'Identify AI opportunities and define success metrics' },
+        { step: 'Data Preparation', desc: 'Clean, label, and prepare training datasets' },
+        { step: 'Model Development', desc: 'Build and train custom ML models' },
+        { step: 'Deployment', desc: 'Deploy models to production with monitoring' }
+      ],
+      color: '#DD00FF',
+      gradient: 'from-[#DD00FF] via-[#B900FF] to-[#FF0099]',
+      glowColor: 'rgba(221, 0, 255, 0.4)',
+      benefits: [
+        'Reduce operational costs by up to 60%',
+        'Automate complex decision-making processes',
+        'Gain predictive insights from your data',
+        'Scale AI capabilities across your organization'
+      ],
+      stats: { success: '100%', projects: '500+', clients: '200+' }
+    },
+    {
+      icon: Blocks,
+      title: 'Blockchain & Web3',
+      tagline: 'Decentralized solutions for the future',
+      description: 'Build secure, transparent, and scalable blockchain applications that redefine trust. From smart contracts to DeFi protocols, we deliver Web3 solutions that leverage the power of decentralized technology.',
+      link: '/services/blockchain',
+      features: [
+        'Smart Contract Development & Auditing',
+        'DeFi Protocol Architecture',
+        'NFT Marketplace & Minting Platforms',
+        'DAO Governance & Tokenomics',
+        'Web3 Wallet Integration',
+        'Layer 2 Scaling Solutions',
+        'Cross-chain Interoperability',
+        'Blockchain Security Audits'
+      ],
+      technologies: ['Solidity', 'Ethereum', 'Solana', 'Polygon', 'Hardhat', 'Web3.js', 'IPFS', 'The Graph'],
+      process: [
+        { step: 'Architecture', desc: 'Design blockchain infrastructure and tokenomics' },
+        { step: 'Smart Contracts', desc: 'Develop and audit secure smart contracts' },
+        { step: 'Integration', desc: 'Build Web3 frontend and wallet connections' },
+        { step: 'Launch', desc: 'Deploy to mainnet with monitoring and support' }
+      ],
+      color: '#00FFFF',
+      gradient: 'from-[#00FFFF] via-[#00E5FF] to-[#00B8D4]',
+      glowColor: 'rgba(0, 255, 255, 0.4)',
+      benefits: [
+        'Eliminate intermediaries and reduce costs',
+        'Increase transparency and trust',
+        'Enable true digital ownership',
+        'Access global, permissionless markets'
+      ],
+      stats: { success: '100%', projects: '350+', clients: '150+' }
+    },
+    {
+      icon: Code2,
+      title: 'Enterprise Software Engineering',
+      tagline: 'Scalable systems, flawless execution',
+      description: 'Enterprise-grade applications built with modern frameworks and best practices. We architect and develop robust, scalable software solutions that handle millions of users and transactions.',
+      link: '/services/enterprise-software',
+      features: [
+        'Full-Stack Web Applications',
+        'Microservices Architecture',
+        'RESTful & GraphQL API Development',
+        'Real-time Data Processing',
+        'Database Design & Optimization',
+        'Legacy System Modernization',
+        'High-Performance Computing',
+        'Event-Driven Architecture'
+      ],
+      technologies: ['React', 'Node.js', 'Python', 'Java', 'PostgreSQL', 'MongoDB', 'Redis', 'Kafka'],
+      process: [
+        { step: 'Planning', desc: 'Requirements gathering and technical architecture' },
+        { step: 'Development', desc: 'Agile sprints with continuous integration' },
+        { step: 'Testing', desc: 'Automated testing and quality assurance' },
+        { step: 'Deployment', desc: 'CI/CD pipeline and production rollout' }
+      ],
+      color: '#00FF9D',
+      gradient: 'from-[#00FF9D] via-[#00E58C] to-[#00CC7A]',
+      glowColor: 'rgba(0, 255, 157, 0.4)',
+      benefits: [
+        'Handle millions of concurrent users',
+        '99.9% uptime and reliability',
+        'Seamless scalability as you grow',
+        'Future-proof technology stack'
+      ],
+      stats: { success: '100%', projects: '800+', clients: '300+' }
+    },
+    {
+      icon: Cloud,
+      title: 'Cloud & DevOps',
+      tagline: 'Infrastructure that scales with you',
+      description: 'Modern cloud infrastructure and DevOps practices that accelerate development and ensure reliability. We build automated, scalable cloud solutions that optimize costs and performance.',
+      link: '/services/cloud-devops',
+      features: [
+        'Multi-Cloud Architecture (AWS, Azure, GCP)',
+        'Kubernetes & Container Orchestration',
+        'CI/CD Pipeline Automation',
+        'Infrastructure as Code (IaC)',
+        'Monitoring & Observability',
+        'Auto-scaling & Load Balancing',
+        'Security & Compliance',
+        'Disaster Recovery & Backup'
+      ],
+      technologies: ['AWS', 'Docker', 'Kubernetes', 'Terraform', 'Jenkins', 'Prometheus', 'Grafana', 'ArgoCD'],
+      process: [
+        { step: 'Assessment', desc: 'Evaluate current infrastructure and requirements' },
+        { step: 'Migration', desc: 'Move workloads to cloud with zero downtime' },
+        { step: 'Optimization', desc: 'Optimize costs and performance' },
+        { step: 'Automation', desc: 'Implement CI/CD and infrastructure automation' }
+      ],
+      color: '#FF7A00',
+      gradient: 'from-[#FF7A00] via-[#FF6A00] to-[#FF5500]',
+      glowColor: 'rgba(255, 122, 0, 0.4)',
+      benefits: [
+        'Reduce infrastructure costs by 40%',
+        'Deploy updates 10x faster',
+        'Automatic scaling during traffic spikes',
+        'Enterprise-grade security and compliance'
+      ],
+      stats: { success: '100%', projects: '600+', clients: '250+' }
+    },
+    {
+      icon: Smartphone,
+      title: 'Mobile App Development',
+      tagline: 'Native performance, stunning design',
+      description: 'Beautiful, high-performance mobile applications for iOS and Android. We create intuitive mobile experiences that users love, with native performance and seamless functionality.',
+      link: '/services/mobile-apps',
+      features: [
+        'Native iOS & Android Development',
+        'Cross-Platform React Native Apps',
+        'Progressive Web Apps (PWA)',
+        'Mobile UI/UX Design',
+        'Push Notifications & Real-time Updates',
+        'Offline-First Architecture',
+        'App Store Optimization (ASO)',
+        'Mobile Analytics & Crash Reporting'
+      ],
+      technologies: ['React Native', 'Swift', 'Kotlin', 'Flutter', 'Firebase', 'Expo', 'Redux', 'GraphQL'],
+      process: [
+        { step: 'Design', desc: 'Create beautiful UI/UX and interactive prototypes' },
+        { step: 'Development', desc: 'Build native or cross-platform applications' },
+        { step: 'Testing', desc: 'Test on real devices and platforms' },
+        { step: 'Launch', desc: 'Submit to App Store and Play Store' }
+      ],
+      color: '#FF0099',
+      gradient: 'from-[#FF0099] via-[#E6008A] to-[#CC007A]',
+      glowColor: 'rgba(255, 0, 153, 0.4)',
+      benefits: [
+        'Reach billions of mobile users',
+        '60% code sharing with cross-platform',
+        'Native performance and user experience',
+        'Faster time to market'
+      ],
+      stats: { success: '100%', projects: '450+', clients: '180+' }
+    },
+    {
+      icon: Gamepad2,
+      title: 'Gaming & WebGL',
+      tagline: 'Immersive experiences, cutting-edge graphics',
+      description: 'Interactive 3D experiences, games, and WebGL applications that captivate users. We build high-performance graphics applications for web, mobile, and desktop platforms.',
+      link: '/services/gaming-webgl',
+      features: [
+        '3D Game Development',
+        'WebGL & Three.js Applications',
+        'Real-time Multiplayer Systems',
+        'Physics Simulation Engines',
+        'AR/VR Experiences',
+        'Game Engine Integration',
+        'Shader Development',
+        'Performance Optimization'
+      ],
+      technologies: ['Unity', 'Unreal Engine', 'Three.js', 'WebGL', 'Babylon.js', 'Socket.io', 'WebXR', 'GLSL'],
+      process: [
+        { step: 'Concept', desc: 'Game design, mechanics, and art direction' },
+        { step: 'Prototyping', desc: 'Build playable prototype and iterate' },
+        { step: 'Production', desc: 'Full development with assets and features' },
+        { step: 'Polish', desc: 'Optimize performance and launch' }
+      ],
+      color: '#B900FF',
+      gradient: 'from-[#B900FF] via-[#9D00E5] to-[#8000CC]',
+      glowColor: 'rgba(185, 0, 255, 0.4)',
+      benefits: [
+        'Engage users with immersive experiences',
+        '60fps smooth performance',
+        'Cross-platform deployment',
+        'Monetization and analytics built-in'
+      ],
+      stats: { success: '100%', projects: '200+', clients: '90+' }
+    },
+    {
+      icon: Shield,
+      title: 'Cybersecurity & Compliance',
+      tagline: 'Enterprise-grade protection',
+      description: 'Comprehensive security solutions to protect your business and build trust. We implement robust cybersecurity measures and ensure compliance with industry standards and regulations.',
+      link: '/services/cybersecurity',
+      features: [
+        'Security Audits & Penetration Testing',
+        'Compliance (SOC 2, ISO 27001, GDPR)',
+        'Vulnerability Assessment & Remediation',
+        'Security Architecture Design',
+        'Identity & Access Management (IAM)',
+        'Incident Response & Monitoring',
+        'Security Training & Awareness',
+        'Zero Trust Architecture'
+      ],
+      technologies: ['OWASP', 'Snyk', 'Auth0', 'Okta', 'AWS Security', 'HashiCorp Vault', 'Splunk', 'CrowdStrike'],
+      process: [
+        { step: 'Assessment', desc: 'Identify vulnerabilities and security gaps' },
+        { step: 'Strategy', desc: 'Design comprehensive security architecture' },
+        { step: 'Implementation', desc: 'Deploy security controls and measures' },
+        { step: 'Monitoring', desc: 'Continuous monitoring and threat detection' }
+      ],
+      color: '#FF0055',
+      gradient: 'from-[#FF0055] via-[#E60050] to-[#CC0045]',
+      glowColor: 'rgba(255, 0, 85, 0.4)',
+      benefits: [
+        'Protect against cyber threats and attacks',
+        'Ensure regulatory compliance',
+        'Build customer trust and confidence',
+        'Minimize security risks and breaches'
+      ],
+      stats: { success: '100%', projects: '400+', clients: '200+' }
+    },
+    {
+      icon: Database,
+      title: 'Data Engineering & Analytics',
+      tagline: 'Turn data into insights',
+      description: 'Build scalable data pipelines and analytics platforms for data-driven decisions. We help you collect, process, and analyze massive datasets to unlock valuable business insights.',
+      link: '/services/data-engineering',
+      features: [
+        'Data Warehouse & Lake Architecture',
+        'ETL/ELT Pipeline Development',
+        'Real-time Data Streaming',
+        'Business Intelligence & Dashboards',
+        'Big Data Processing',
+        'Data Governance & Quality',
+        'Predictive Analytics',
+        'Data Visualization'
+      ],
+      technologies: ['Snowflake', 'Apache Spark', 'Airflow', 'dbt', 'Tableau', 'Kafka', 'Databricks', 'Power BI'],
+      process: [
+        { step: 'Discovery', desc: 'Understand data sources and business requirements' },
+        { step: 'Architecture', desc: 'Design scalable data infrastructure' },
+        { step: 'Pipeline', desc: 'Build automated data pipelines' },
+        { step: 'Analytics', desc: 'Create insights and visualizations' }
+      ],
+      color: '#FFD700',
+      gradient: 'from-[#FFD700] via-[#FFC700] to-[#FFB700]',
+      glowColor: 'rgba(255, 215, 0, 0.4)',
+      benefits: [
+        'Make data-driven business decisions',
+        'Process billions of records efficiently',
+        'Real-time insights and analytics',
+        'Unified view of business metrics'
+      ],
+      stats: { success: '100%', projects: '300+', clients: '120+' }
+    },
+    {
+      icon: Network,
+      title: 'API & Integration Services',
+      tagline: 'Connect everything, seamlessly',
+      description: 'Robust API development and third-party integrations for connected ecosystems. We build scalable APIs and integrate disparate systems to create unified digital experiences.',
+      link: '/services/api-integration',
+      features: [
+        'RESTful & GraphQL API Design',
+        'API Gateway & Rate Limiting',
+        'Third-Party Integration (Stripe, Twilio, etc.)',
+        'Webhook & Event-Driven Architecture',
+        'API Documentation & Developer Portal',
+        'Legacy System Integration',
+        'Microservices Communication',
+        'API Security & Authentication'
+      ],
+      technologies: ['GraphQL', 'REST', 'gRPC', 'Kong', 'Postman', 'Swagger', 'Apollo', 'Kafka'],
+      process: [
+        { step: 'Design', desc: 'Define API architecture and endpoints' },
+        { step: 'Development', desc: 'Build scalable API infrastructure' },
+        { step: 'Documentation', desc: 'Create comprehensive API docs' },
+        { step: 'Integration', desc: 'Connect systems and test endpoints' }
+      ],
+      color: '#00E5E5',
+      gradient: 'from-[#00E5E5] via-[#00D5D5] to-[#00C5C5]',
+      glowColor: 'rgba(0, 229, 229, 0.4)',
+      benefits: [
+        'Seamless system integration',
+        'Accelerate development with reusable APIs',
+        'Enable ecosystem partnerships',
+        'Scale integrations effortlessly'
+      ],
+      stats: { success: '100%', projects: '550+', clients: '220+' }
+    },
+    {
+      icon: Zap,
+      title: 'Performance Optimization',
+      tagline: 'Speed is a feature',
+      description: 'Make your applications blazing fast with advanced optimization techniques. We analyze, optimize, and fine-tune every aspect of your application for maximum performance.',
+      link: '/services/performance',
+      features: [
+        'Frontend Performance Tuning',
+        'Backend Optimization & Caching',
+        'Database Query Optimization',
+        'CDN & Edge Computing',
+        'Load Testing & Stress Analysis',
+        'Core Web Vitals Improvement',
+        'Code Splitting & Lazy Loading',
+        'Image & Asset Optimization'
+      ],
+      technologies: ['Redis', 'Varnish', 'CloudFlare', 'New Relic', 'Lighthouse', 'WebPageTest', 'K6', 'Datadog'],
+      process: [
+        { step: 'Audit', desc: 'Identify performance bottlenecks' },
+        { step: 'Optimize', desc: 'Implement optimization strategies' },
+        { step: 'Monitor', desc: 'Continuous performance monitoring' },
+        { step: 'Iterate', desc: 'Ongoing improvements and refinements' }
+      ],
+      color: '#FFE500',
+      gradient: 'from-[#FFE500] via-[#FFD500] to-[#FFC500]',
+      glowColor: 'rgba(255, 229, 0, 0.4)',
+      benefits: [
+        'Improve page load times by 70%',
+        'Better SEO rankings',
+        'Enhanced user experience',
+        'Reduced infrastructure costs'
+      ],
+      stats: { success: '100%', projects: '400+', clients: '180+' }
+    },
+    {
+      icon: Cpu,
+      title: 'IoT & Edge Computing',
+      tagline: 'Connected devices, intelligent edge',
+      description: 'Build IoT ecosystems and edge computing solutions for real-time intelligence. We connect physical devices to digital systems, enabling smart, responsive applications.',
+      link: '/services/iot-edge',
+      features: [
+        'IoT Device Integration & Management',
+        'Edge Computing Architecture',
+        'Sensor Data Processing',
+        'Real-time Monitoring Dashboards',
+        'Predictive Maintenance Systems',
+        'Industrial IoT Solutions',
+        'Smart Home Automation',
+        'Fleet Management Systems'
+      ],
+      technologies: ['MQTT', 'AWS IoT', 'Azure IoT', 'InfluxDB', 'Grafana', 'Node-RED', 'EdgeX', 'ThingsBoard'],
+      process: [
+        { step: 'Planning', desc: 'Define IoT architecture and requirements' },
+        { step: 'Integration', desc: 'Connect devices and sensors' },
+        { step: 'Processing', desc: 'Build edge computing pipelines' },
+        { step: 'Insights', desc: 'Deliver real-time analytics' }
+      ],
+      color: '#00CCFF',
+      gradient: 'from-[#00CCFF] via-[#00BBEE] to-[#00AADD]',
+      glowColor: 'rgba(0, 204, 255, 0.4)',
+      benefits: [
+        'Real-time device monitoring',
+        'Reduced latency with edge processing',
+        'Lower bandwidth costs',
+        'Predictive maintenance and analytics'
+      ],
+      stats: { success: '100%', projects: '250+', clients: '100+' }
+    },
+    {
+      icon: Sparkles,
+      title: 'Product Strategy & UX',
+      tagline: 'Design that drives results',
+      description: 'Strategic product development with user-centered design for maximum impact. We combine research, strategy, and design to create products users love.',
+      link: '/services/product-ux',
+      features: [
+        'Product Discovery & Research',
+        'UX/UI Design & Prototyping',
+        'User Testing & Validation',
+        'Design System Development',
+        'Conversion Rate Optimization',
+        'Product Analytics & Insights',
+        'Journey Mapping',
+        'Accessibility & Inclusivity'
+      ],
+      technologies: ['Figma', 'Sketch', 'Adobe XD', 'Framer', 'Hotjar', 'Mixpanel', 'Optimal Workshop', 'Maze'],
+      process: [
+        { step: 'Research', desc: 'User research and market analysis' },
+        { step: 'Strategy', desc: 'Define product vision and roadmap' },
+        { step: 'Design', desc: 'Create user-centered designs' },
+        { step: 'Validate', desc: 'Test and iterate with real users' }
+      ],
+      color: '#FF66FF',
+      gradient: 'from-[#FF66FF] via-[#EE55EE] to-[#DD44DD]',
+      glowColor: 'rgba(255, 102, 255, 0.4)',
+      benefits: [
+        'Increase user engagement by 50%',
+        'Improve conversion rates',
+        'Reduce development waste',
+        'Build products users love'
+      ],
+      stats: { success: '100%', projects: '350+', clients: '140+' }
+    }
+  ];
+
+  const whyChooseUs = [
+    {
+      icon: Award,
+      title: 'Proven Expertise',
+      description: '10+ years delivering complex software projects across industries',
+      color: '#DD00FF',
+      gradient: 'from-[#DD00FF] to-[#B900FF]'
+    },
+    {
+      icon: Users,
+      title: 'Dedicated Teams',
+      description: 'Senior engineers and architects committed to your success',
+      color: '#00FFFF',
+      gradient: 'from-[#00FFFF] to-[#00E5FF]'
+    },
+    {
+      icon: Clock,
+      title: '100% On-Time Delivery',
+      description: 'All projects delivered on schedule and within budget',
+      color: '#00FF9D',
+      gradient: 'from-[#00FF9D] to-[#00E58C]'
+    },
+    {
+      icon: Shield,
+      title: 'Enterprise Security',
+      description: 'Bank-grade security and compliance built into every solution',
+      color: '#FF7A00',
+      gradient: 'from-[#FF7A00] to-[#FF6A00]'
+    }
+  ];
+
+  return (
+    <div className="min-h-screen bg-[#05060A] relative overflow-hidden">
+      {/* Background effects - Ultra-Premium Neon */}
+      <div className="absolute inset-0">
+        {/* Animated gradient orbs */}
+        <div className="absolute top-0 left-1/4 w-[800px] h-[800px] bg-[#DD00FF]/10 rounded-full blur-[150px] animate-pulse"></div>
+        <div className="absolute top-1/3 right-1/4 w-[600px] h-[600px] bg-[#00FFFF]/10 rounded-full blur-[120px] animate-pulse" style={{ animationDelay: '1s' }}></div>
+        <div className="absolute bottom-1/4 left-1/3 w-[700px] h-[700px] bg-[#FF0099]/8 rounded-full blur-[140px] animate-pulse" style={{ animationDelay: '2s' }}></div>
+        
+        {/* Grid pattern */}
+        <div className="absolute inset-0 opacity-[0.02]" style={{
+          backgroundImage: 'linear-gradient(rgba(0, 255, 255, 0.3) 1px, transparent 1px), linear-gradient(90deg, rgba(0, 255, 255, 0.3) 1px, transparent 1px)',
+          backgroundSize: '100px 100px'
+        }}></div>
+      </div>
+
+      <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-12 relative z-10 py-16 md:py-24 lg:py-32">
+        
+        {/* Header */}
+        <div className="text-center mb-16 md:mb-24">
+          <div className="inline-flex items-center gap-2.5 px-5 py-2.5 bg-gradient-to-r from-[#FF0099]/10 to-[#00FFFF]/10 border-2 border-white/[0.15] rounded-full mb-8 backdrop-blur-md shadow-[0_0_30px_rgba(255,0,153,0.2)]">
+            <Sparkles className="w-4 h-4 text-[#FF0099] animate-pulse" />
+            <span className="text-white text-sm font-bold tracking-wide uppercase">Our Services</span>
+            <div className="w-2 h-2 bg-[#00FFFF] rounded-full animate-pulse"></div>
+          </div>
+          
+          <h1 className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-black text-white mb-8 leading-tight">
+            Transform Your Business with{' '}
+            <span className="bg-gradient-to-r from-[#FF0099] via-[#DD00FF] to-[#00FFFF] bg-clip-text text-transparent animate-gradient">
+              Expert Solutions
+            </span>
+          </h1>
+          
+          <p className="text-base md:text-lg lg:text-xl text-white/80 max-w-4xl mx-auto leading-relaxed">
+            From AI and blockchain to cloud infrastructure and mobile apps, we deliver cutting-edge technology solutions that drive growth and innovation with <span className="text-[#00FFFF] font-bold">100% success rate</span> across all services.
+          </p>
+
+          {/* Stats Bar */}
+          <div className="flex flex-wrap items-center justify-center gap-6 md:gap-8 mt-10">
+            <div className="text-center">
+              <div className="text-3xl md:text-4xl font-black bg-gradient-to-r from-[#00FFFF] to-[#00E5FF] bg-clip-text text-transparent mb-1">5000+</div>
+              <div className="text-xs md:text-sm text-white/60 font-semibold uppercase tracking-wider">Projects Delivered</div>
+            </div>
+            <div className="w-px h-12 bg-white/[0.1]"></div>
+            <div className="text-center">
+              <div className="text-3xl md:text-4xl font-black bg-gradient-to-r from-[#FF0099] to-[#DD00FF] bg-clip-text text-transparent mb-1">1900+</div>
+              <div className="text-xs md:text-sm text-white/60 font-semibold uppercase tracking-wider">Happy Clients</div>
+            </div>
+            <div className="w-px h-12 bg-white/[0.1]"></div>
+            <div className="text-center">
+              <div className="text-3xl md:text-4xl font-black bg-gradient-to-r from-[#00FF9D] to-[#00E58C] bg-clip-text text-transparent mb-1">100%</div>
+              <div className="text-xs md:text-sm text-white/60 font-semibold uppercase tracking-wider">Success Rate</div>
+            </div>
+          </div>
+        </div>
+
+        {/* Services Grid - All 12 Services */}
+        <div className="mb-24 md:mb-32">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 sm:gap-5 lg:gap-6">
+            {services.map((service, index) => {
+              const Icon = service.icon;
+              return (
+                <div
+                  key={index}
+                  onClick={() => setActiveService(index)}
+                  className={`group cursor-pointer relative p-6 sm:p-7 lg:p-8 bg-white/[0.02] border-2 rounded-2xl transition-all duration-500 overflow-hidden flex flex-col min-h-[520px] sm:min-h-[540px] ${
+                    activeService === index
+                      ? 'border-white/[0.3] bg-white/[0.05] scale-[1.02] shadow-[0_0_40px_rgba(255,0,153,0.3)]'
+                      : 'border-white/[0.08] hover:border-white/[0.15] hover:bg-white/[0.04]'
+                  }`}
+                  style={{
+                    boxShadow: activeService === index ? `0 0 60px ${service.glowColor}` : 'none'
+                  }}
+                >
+                  {/* Animated background gradient */}
+                  <div className={`absolute inset-0 bg-gradient-to-br ${service.gradient} opacity-0 group-hover:opacity-5 transition-opacity duration-500`}></div>
+                  
+                  {/* Glow effect */}
+                  <div 
+                    className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 blur-2xl"
+                    style={{ background: `radial-gradient(circle at 50% 50%, ${service.glowColor}, transparent 70%)` }}
+                  ></div>
+
+                  <div className="relative z-10 flex flex-col h-full">
+                    {/* Icon */}
+                    <div className={`w-16 h-16 sm:w-[68px] sm:h-[68px] rounded-xl sm:rounded-2xl bg-gradient-to-br ${service.gradient} flex items-center justify-center mb-5 sm:mb-6 group-hover:scale-110 transition-all duration-300 shadow-lg flex-shrink-0`}
+                      style={{ boxShadow: `0 10px 40px ${service.glowColor}` }}
+                    >
+                      <Icon className="w-8 h-8 sm:w-9 sm:h-9 text-white" />
+                    </div>
+                    
+                    {/* Title */}
+                    <h3 className="text-xl sm:text-[22px] font-black text-white mb-2 sm:mb-2.5 leading-tight min-h-[56px] sm:min-h-[60px] flex items-start">
+                      {service.title}
+                    </h3>
+                    
+                    {/* Tagline */}
+                    <p className={`text-sm sm:text-[15px] font-bold bg-gradient-to-r ${service.gradient} bg-clip-text text-transparent mb-3 sm:mb-3.5 leading-snug min-h-[20px]`}>
+                      {service.tagline}
+                    </p>
+                    
+                    {/* Description */}
+                    <p className="text-sm sm:text-[15px] text-white/70 leading-relaxed mb-5 sm:mb-6 line-clamp-2 min-h-[44px] flex-grow">
+                      {service.description.split('.')[0]}.
+                    </p>
+
+                    {/* Stats */}
+                    <div className="flex items-center justify-start gap-4 sm:gap-5 mb-5 sm:mb-6 pb-5 sm:pb-6 border-b border-white/[0.08]">
+                      <div className="text-left">
+                        <div className="text-base sm:text-lg font-black text-[#00FFFF] mb-0.5">{service.stats.success}</div>
+                        <div className="text-[10px] sm:text-[11px] text-white/50 font-semibold uppercase tracking-wide">Success</div>
+                      </div>
+                      <div className="w-px h-10 bg-white/[0.12]"></div>
+                      <div className="text-left">
+                        <div className="text-base sm:text-lg font-black text-[#FF0099] mb-0.5">{service.stats.projects}</div>
+                        <div className="text-[10px] sm:text-[11px] text-white/50 font-semibold uppercase tracking-wide">Projects</div>
+                      </div>
+                    </div>
+                    
+                    {/* Buttons - pushed to bottom */}
+                    <div className="flex flex-col gap-2.5 sm:gap-3 mt-auto">
+                      <button className={`w-full inline-flex items-center justify-center gap-2 py-2 text-sm sm:text-[15px] font-bold transition-all duration-300 ${
+                        activeService === index 
+                          ? 'text-white' 
+                          : 'text-white/60 group-hover:text-white'
+                      }`}>
+                        <span>View Details</span>
+                        <ArrowRight className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1" />
+                      </button>
+                      
+                      {service.link && (
+                        <Link
+                          to={service.link}
+                          onClick={(e) => e.stopPropagation()}
+                          className={`w-full inline-flex items-center justify-center gap-2.5 px-5 py-3 sm:py-3.5 bg-gradient-to-r ${service.gradient} rounded-xl sm:rounded-2xl text-sm sm:text-[15px] font-black text-white hover:shadow-lg transition-all duration-300 hover:scale-[1.02] active:scale-[0.98] border border-white/[0.25]`}
+                          style={{ boxShadow: `0 10px 30px ${service.glowColor}` }}
+                        >
+                          <span>Learn More</span>
+                          <Rocket className="w-4 h-4" />
+                        </Link>
+                      )}
+                    </div>
+                  </div>
+                </div>
+              );
+            })}
+          </div>
+        </div>
+
+        {/* Active Service Details - Ultra-Premium */}
+        <div className="mb-24 md:mb-32">
+          {services.map((service, index) => {
+            if (index !== activeService) return null;
+            const Icon = service.icon;
+            
+            return (
+              <div key={index} className="space-y-10 md:space-y-16">
+                
+                {/* Service Header */}
+                <div className="text-center relative">
+                  {/* Background glow */}
+                  <div 
+                    className="absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-[300px] opacity-20 blur-[100px]"
+                    style={{ background: `radial-gradient(circle, ${service.glowColor}, transparent 70%)` }}
+                  ></div>
+                  
+                  <div className={`relative inline-flex w-24 h-24 md:w-28 md:h-28 rounded-3xl bg-gradient-to-br ${service.gradient} items-center justify-center mb-8 shadow-2xl`}
+                    style={{ boxShadow: `0 20px 60px ${service.glowColor}` }}
+                  >
+                    <Icon className="w-12 h-12 md:w-14 md:h-14 text-white" />
+                  </div>
+                  
+                  <h2 className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-black text-white mb-6 leading-tight">
+                    {service.title}
+                  </h2>
+                  
+                  <p className={`text-base md:text-lg lg:text-xl font-bold bg-gradient-to-r ${service.gradient} bg-clip-text text-transparent mb-6`}>
+                    {service.tagline}
+                  </p>
+                  
+                  <p className="text-base md:text-lg text-white/80 max-w-4xl mx-auto leading-relaxed">
+                    {service.description}
+                  </p>
+
+                  {/* Service Stats */}
+                  <div className="flex flex-wrap items-center justify-center gap-6 md:gap-10 mt-8">
+                    <div className="text-center px-6 py-4 bg-white/[0.03] border-2 border-white/[0.1] rounded-2xl">
+                      <div className={`text-2xl md:text-3xl font-black bg-gradient-to-r ${service.gradient} bg-clip-text text-transparent mb-1`}>
+                        {service.stats.success}
+                      </div>
+                      <div className="text-xs text-white/60 font-bold uppercase tracking-wider">Success Rate</div>
+                    </div>
+                    <div className="text-center px-6 py-4 bg-white/[0.03] border-2 border-white/[0.1] rounded-2xl">
+                      <div className={`text-2xl md:text-3xl font-black bg-gradient-to-r ${service.gradient} bg-clip-text text-transparent mb-1`}>
+                        {service.stats.projects}
+                      </div>
+                      <div className="text-xs text-white/60 font-bold uppercase tracking-wider">Projects</div>
+                    </div>
+                    <div className="text-center px-6 py-4 bg-white/[0.03] border-2 border-white/[0.1] rounded-2xl">
+                      <div className={`text-2xl md:text-3xl font-black bg-gradient-to-r ${service.gradient} bg-clip-text text-transparent mb-1`}>
+                        {service.stats.clients}
+                      </div>
+                      <div className="text-xs text-white/60 font-bold uppercase tracking-wider">Clients</div>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Features & Technologies */}
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 md:gap-8">
+                  
+                  {/* Features */}
+                  <div className="relative group p-8 md:p-10 bg-white/[0.02] border-2 border-white/[0.12] rounded-3xl overflow-hidden hover:border-white/[0.2] transition-all duration-500">
+                    <div className={`absolute inset-0 bg-gradient-to-br ${service.gradient} opacity-0 group-hover:opacity-5 transition-opacity duration-500`}></div>
+                    
+                    <div className="relative z-10">
+                      <h3 className="text-2xl md:text-3xl font-black text-white mb-8 flex items-center gap-3">
+                        <div className={`w-10 h-10 rounded-xl bg-gradient-to-br ${service.gradient} flex items-center justify-center`}>
+                          <CheckCircle2 className="w-6 h-6 text-white" />
+                        </div>
+                        Key Features
+                      </h3>
+                      <ul className="space-y-4">
+                        {service.features.map((feature, idx) => (
+                          <li key={idx} className="flex items-start gap-3 text-white/80 group/item hover:text-white transition-colors duration-200">
+                            <div className="relative mt-1.5">
+                              <div className={`w-2 h-2 rounded-full bg-gradient-to-r ${service.gradient}`}></div>
+                              <div className={`absolute inset-0 w-2 h-2 rounded-full bg-gradient-to-r ${service.gradient} blur-sm opacity-70`}></div>
+                            </div>
+                            <span className="text-sm md:text-base font-medium">{feature}</span>
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                  </div>
+
+                  {/* Technologies */}
+                  <div className="relative group p-8 md:p-10 bg-white/[0.02] border-2 border-white/[0.12] rounded-3xl overflow-hidden hover:border-white/[0.2] transition-all duration-500">
+                    <div className={`absolute inset-0 bg-gradient-to-br ${service.gradient} opacity-0 group-hover:opacity-5 transition-opacity duration-500`}></div>
+                    
+                    <div className="relative z-10">
+                      <h3 className="text-2xl md:text-3xl font-black text-white mb-8 flex items-center gap-3">
+                        <div className={`w-10 h-10 rounded-xl bg-gradient-to-br ${service.gradient} flex items-center justify-center`}>
+                          <Cpu className="w-6 h-6 text-white" />
+                        </div>
+                        Technologies We Use
+                      </h3>
+                      <div className="flex flex-wrap gap-3">
+                        {service.technologies.map((tech, idx) => (
+                          <span
+                            key={idx}
+                            className="group/tech relative px-4 py-2.5 bg-white/[0.04] border-2 border-white/[0.12] rounded-xl text-sm font-bold text-white/80 hover:text-white hover:border-white/[0.25] transition-all duration-300 hover:scale-105 cursor-default"
+                          >
+                            <span className="relative z-10">{tech}</span>
+                            <div className={`absolute inset-0 bg-gradient-to-r ${service.gradient} opacity-0 group-hover/tech:opacity-10 rounded-xl transition-opacity duration-300`}></div>
+                          </span>
+                        ))}
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Process */}
+                <div>
+                  <h3 className="text-3xl md:text-4xl font-black text-white mb-10 text-center">
+                    Our <span className={`bg-gradient-to-r ${service.gradient} bg-clip-text text-transparent`}>Process</span>
+                  </h3>
+                  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 md:gap-6">
+                    {service.process.map((item, idx) => (
+                      <div key={idx} className="relative group p-6 md:p-8 bg-white/[0.02] border-2 border-white/[0.12] rounded-2xl hover:border-white/[0.2] transition-all duration-500 overflow-visible">
+                        {/* Animated background gradient */}
+                        <div className={`absolute inset-0 bg-gradient-to-br ${service.gradient} opacity-0 group-hover:opacity-5 transition-opacity duration-500 rounded-2xl`}></div>
+                        
+                        {/* Number Badge - Fixed positioning to be fully visible */}
+                        <div className="absolute -top-3 -left-3 z-20">
+                          <div className={`relative w-14 h-14 rounded-2xl bg-gradient-to-br ${service.gradient} flex items-center justify-center shadow-lg border-2 border-white/[0.3] group-hover:scale-110 transition-all duration-300`}
+                            style={{ boxShadow: `0 10px 40px ${service.glowColor}` }}
+                          >
+                            {/* Glow effect for number */}
+                            <div className={`absolute inset-0 bg-gradient-to-br ${service.gradient} rounded-2xl blur-md opacity-60`}></div>
+                            
+                            {/* Number */}
+                            <span className="relative z-10 text-white font-black text-xl" style={{ textShadow: '0 2px 10px rgba(0,0,0,0.5)' }}>
+                              {String(idx + 1).padStart(2, '0')}
+                            </span>
+                          </div>
+                        </div>
+                        
+                        <div className="relative z-10 mt-4">
+                          <h4 className="text-lg md:text-xl font-black text-white mb-3">{item.step}</h4>
+                          <p className="text-sm text-white/70 leading-relaxed">{item.desc}</p>
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+
+                {/* Benefits */}
+                <div className="relative group p-8 md:p-12 lg:p-16 bg-white/[0.03] border-2 border-white/[0.15] rounded-3xl overflow-hidden">
+                  <div className={`absolute inset-0 bg-gradient-to-br ${service.gradient} opacity-5`}></div>
+                  <div 
+                    className="absolute inset-0 opacity-30 blur-3xl"
+                    style={{ background: `radial-gradient(circle at 50% 50%, ${service.glowColor}, transparent 70%)` }}
+                  ></div>
+                  
+                  <div className="relative z-10">
+                    <h3 className="text-3xl md:text-4xl font-black text-white mb-10 text-center flex items-center justify-center gap-3">
+                      <div className="relative">
+                        <Star className="w-8 h-8 md:w-10 md:h-10" style={{ color: service.color, filter: `drop-shadow(0 0 12px ${service.color})` }} />
+                      </div>
+                      Key Benefits
+                    </h3>
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-5 md:gap-6">
+                      {service.benefits.map((benefit, idx) => (
+                        <div key={idx} className="flex items-start gap-4 group/benefit">
+                          <div className="relative flex-shrink-0 mt-1">
+                            {/* Glow background layers */}
+                            <div 
+                              className="absolute inset-0 w-6 h-6 md:w-7 md:h-7 rounded-full blur-lg opacity-60 group-hover/benefit:opacity-100 transition-opacity duration-300"
+                              style={{ backgroundColor: service.color }}
+                            ></div>
+                            <div 
+                              className="absolute inset-0 w-6 h-6 md:w-7 md:h-7 rounded-full blur-md opacity-40 group-hover/benefit:opacity-70 transition-opacity duration-300"
+                              style={{ backgroundColor: service.color }}
+                            ></div>
+                            
+                            {/* Icon with drop shadow */}
+                            <CheckCircle2 
+                              className="relative w-6 h-6 md:w-7 md:h-7 transition-transform duration-300 group-hover/benefit:scale-110 group-hover/benefit:rotate-12" 
+                              style={{ 
+                                color: service.color,
+                                filter: `drop-shadow(0 0 8px ${service.color})`
+                              }} 
+                            />
+                          </div>
+                          <span className="text-base md:text-lg text-white/90 font-medium leading-relaxed group-hover/benefit:text-white transition-colors duration-300">{benefit}</span>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                </div>
+
+                {/* CTA for specific service */}
+                {service.link && (
+                  <div className="text-center">
+                    <Link 
+                      to={service.link}
+                      className={`group relative inline-flex items-center gap-3 px-10 py-5 bg-gradient-to-r ${service.gradient} rounded-2xl overflow-hidden transition-all duration-300 hover:shadow-[0_20px_60px_rgba(255,0,153,0.4)] hover:-translate-y-1 active:translate-y-0 border-2 border-white/[0.2]`}
+                      style={{ boxShadow: `0 20px 50px ${service.glowColor}` }}
+                    >
+                      <div className="absolute inset-0 -translate-x-full group-hover:translate-x-full transition-transform duration-1000 bg-gradient-to-r from-transparent via-white/30 to-transparent"></div>
+                      <Rocket className="relative w-6 h-6 text-white" />
+                      <span className="relative text-white text-lg font-black tracking-wide">Explore {service.title}</span>
+                      <ArrowRight className="relative w-6 h-6 text-white transition-transform duration-300 group-hover:translate-x-1" />
+                    </Link>
+                  </div>
+                )}
+
+              </div>
+            );
+          })}
+        </div>
+
+        {/* Why Choose Us - Ultra-Premium */}
+        <div className="mb-24 md:mb-32">
+          <div className="text-center mb-12 md:mb-16">
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-black text-white mb-6">
+              Why Choose <span className="bg-gradient-to-r from-[#FF0099] via-[#DD00FF] to-[#00FFFF] bg-clip-text text-transparent">Axis Cyber</span>
+            </h2>
+            <p className="text-base md:text-lg text-white/70 max-w-2xl mx-auto">
+              We bring experience, expertise, and dedication to every project with a proven <span className="text-[#00FF9D] font-bold">100% success rate</span>
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 md:gap-6">
+            {whyChooseUs.map((item, index) => {
+              const Icon = item.icon;
+              return (
+                <div
+                  key={index}
+                  className="group relative p-8 md:p-10 bg-white/[0.02] border-2 border-white/[0.12] rounded-3xl hover:bg-white/[0.04] hover:border-white/[0.2] transition-all duration-500 overflow-hidden"
+                >
+                  <div className={`absolute inset-0 bg-gradient-to-br ${item.gradient} opacity-0 group-hover:opacity-5 transition-opacity duration-500`}></div>
+                  
+                  <div className="relative z-10">
+                    <div className={`inline-flex w-14 h-14 md:w-16 md:h-16 rounded-2xl bg-gradient-to-br ${item.gradient} items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300 shadow-lg`}>
+                      <Icon className="w-7 h-7 md:w-8 md:h-8 text-white" />
+                    </div>
+                    <h3 className="text-xl md:text-2xl font-black text-white mb-3">{item.title}</h3>
+                    <p className="text-sm md:text-base text-white/70 leading-relaxed">{item.description}</p>
+                  </div>
+                </div>
+              );
+            })}
+          </div>
+        </div>
+
+        {/* CTA Section - Ultra-Premium */}
+        <div className="relative group text-center p-10 md:p-14 lg:p-20 bg-white/[0.02] border-2 border-white/[0.15] rounded-[2rem] overflow-hidden">
+          {/* Background effects */}
+          <div className="absolute inset-0 bg-gradient-to-r from-[#FF0099]/5 via-[#DD00FF]/5 to-[#00FFFF]/5"></div>
+          <div className="absolute top-0 left-0 w-full h-full opacity-20 blur-3xl"
+            style={{ background: 'radial-gradient(circle at 30% 50%, rgba(255,0,153,0.3), transparent 50%), radial-gradient(circle at 70% 50%, rgba(0,255,255,0.3), transparent 50%)' }}
+          ></div>
+          
+          <div className="relative z-10">
+            <div className="inline-flex w-20 h-20 md:w-24 md:h-24 rounded-3xl bg-gradient-to-br from-[#FF0099] via-[#DD00FF] to-[#00FFFF] items-center justify-center mb-8 shadow-2xl animate-pulse"
+              style={{ boxShadow: '0 20px 60px rgba(255,0,153,0.4)' }}
+            >
+              <Lightbulb className="w-10 h-10 md:w-12 md:h-12 text-white" />
+            </div>
+            
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-black text-white mb-6">
+              Ready to Start Your <span className="bg-gradient-to-r from-[#FF0099] via-[#DD00FF] to-[#00FFFF] bg-clip-text text-transparent">Next Project?</span>
+            </h2>
+            
+            <p className="text-base md:text-lg text-white/70 max-w-2xl mx-auto mb-10 leading-relaxed">
+              Let's discuss your requirements and create a custom solution tailored to your business needs. Join 1900+ satisfied clients worldwide.
+            </p>
+            
+            <div className="flex flex-col sm:flex-row items-center justify-center gap-4 md:gap-6">
+              <Link 
+                to="/contact"
+                className="group relative rounded-2xl transition-all duration-300 hover:shadow-[0_20px_60px_rgba(255,0,153,0.4)] hover:-translate-y-1 active:translate-y-0"
+              >
+                {/* Gradient border wrapper - Pink to Cyan */}
+                <div className="bg-gradient-to-r from-[#FF0099] via-[#B900FF] to-[#00FFFF] rounded-2xl p-[2px]">
+                  <div className="px-10 py-5 bg-gradient-to-r from-[#FF0099] via-[#B900FF] to-[#00FFFF] rounded-2xl relative overflow-hidden inline-flex items-center gap-3">
+                    <div className="absolute inset-0 -translate-x-full group-hover:translate-x-full transition-transform duration-1000 bg-gradient-to-r from-transparent via-white/30 to-transparent"></div>
+                    <Sparkles className="relative w-6 h-6 text-white" />
+                    <span className="relative text-white text-lg font-black tracking-wide">Get Started</span>
+                    <ArrowRight className="relative w-6 h-6 text-white group-hover:translate-x-1 transition-transform duration-300" />
+                  </div>
+                </div>
+              </Link>
+              
+              <Link 
+                to="/#case-studies"
+                className="px-10 py-5 bg-white/[0.04] border-2 border-white/[0.15] text-white rounded-2xl text-lg font-bold hover:bg-white/[0.08] hover:border-white/[0.25] transition-all duration-300 inline-flex items-center gap-3"
+              >
+                <Target className="w-6 h-6" />
+                <span>View Our Work</span>
+              </Link>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  );
+}

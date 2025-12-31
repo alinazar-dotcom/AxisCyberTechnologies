@@ -1,0 +1,841 @@
+[
+  {
+    "id": "98c7783b-2368-41db-a12e-75273e1ca9a5",
+    "name": "Web Development",
+    "slug": "web-development",
+    "tagline": null,
+    "short_description": "Modern, scalable web applications built with cutting-edge technologies",
+    "full_description": "Create powerful web experiences with our full-stack development expertise. We build fast, secure, and scalable web applications that engage users and drive business growth.",
+    "icon": "code",
+    "color": null,
+    "features": [
+      "Responsive Design",
+      "Progressive Web Apps",
+      "API Development",
+      "Real-time Features",
+      "E-commerce Solutions",
+      "Content Management Systems"
+    ],
+    "technologies": [
+      "React",
+      "Next.js",
+      "Node.js",
+      "TypeScript",
+      "GraphQL",
+      "MongoDB",
+      "PostgreSQL",
+      "Tailwind CSS"
+    ],
+    "use_cases": [
+      "Corporate Websites",
+      "E-commerce Platforms",
+      "SaaS Applications",
+      "Web Portals",
+      "Social Networks",
+      "Booking Systems"
+    ],
+    "pricing_model": "Project-based",
+    "starting_price": "From $25,000",
+    "process_steps": {
+      "1": {
+        "title": "Requirements Gathering",
+        "description": "Define scope and objectives"
+      },
+      "2": {
+        "title": "Design & Prototyping",
+        "description": "Create wireframes and mockups"
+      },
+      "3": {
+        "title": "Development",
+        "description": "Build frontend and backend"
+      },
+      "4": {
+        "title": "Testing & QA",
+        "description": "Ensure quality and performance"
+      },
+      "5": {
+        "title": "Deployment & Support",
+        "description": "Launch and maintain"
+      }
+    },
+    "case_study_ids": null,
+    "success_rate": 100,
+    "projects_completed": 300,
+    "is_featured": true,
+    "is_active": true,
+    "display_order": 2,
+    "meta_title": "Web Development Services | Axis Cyber Technologies",
+    "meta_description": "Build modern, scalable web applications with React, Next.js, and Node.js. Full-stack development expertise.",
+    "created_at": "2025-12-24T13:30:40.900225+00:00",
+    "updated_at": "2025-12-24T13:30:40.900225+00:00"
+  },
+  {
+    "id": "2fab9eb4-fd8b-4375-bdb8-a38799733827",
+    "name": "Mobile App Development",
+    "slug": "mobile-app-development",
+    "tagline": null,
+    "short_description": "Native and cross-platform mobile applications for iOS and Android",
+    "full_description": "Reach your customers on any device with our mobile app development services. We create beautiful, performant mobile experiences that users love.",
+    "icon": "smartphone",
+    "color": null,
+    "features": [
+      "Native iOS Development",
+      "Native Android Development",
+      "Cross-Platform Apps",
+      "App Store Optimization",
+      "Push Notifications",
+      "Offline Functionality"
+    ],
+    "technologies": [
+      "React Native",
+      "Flutter",
+      "Swift",
+      "Kotlin",
+      "Firebase",
+      "GraphQL",
+      "Redux",
+      "Expo"
+    ],
+    "use_cases": [
+      "Consumer Apps",
+      "Enterprise Mobility",
+      "On-Demand Services",
+      "Social Media Apps",
+      "Fitness & Health Apps",
+      "Financial Apps"
+    ],
+    "pricing_model": "Project-based",
+    "starting_price": "From $40,000",
+    "process_steps": {
+      "1": {
+        "title": "Strategy & Planning",
+        "description": "Define app concept and features"
+      },
+      "2": {
+        "title": "UX/UI Design",
+        "description": "Create intuitive interfaces"
+      },
+      "3": {
+        "title": "Development",
+        "description": "Build native or cross-platform"
+      },
+      "4": {
+        "title": "Testing",
+        "description": "QA on multiple devices"
+      },
+      "5": {
+        "title": "Launch & Maintenance",
+        "description": "Deploy to app stores"
+      }
+    },
+    "case_study_ids": null,
+    "success_rate": 100,
+    "projects_completed": 200,
+    "is_featured": true,
+    "is_active": true,
+    "display_order": 3,
+    "meta_title": "Mobile App Development | iOS & Android | Axis Cyber",
+    "meta_description": "Build native and cross-platform mobile apps for iOS and Android. React Native, Flutter, Swift, and Kotlin expertise.",
+    "created_at": "2025-12-24T13:30:40.900225+00:00",
+    "updated_at": "2025-12-24T13:30:40.900225+00:00"
+  },
+  {
+    "id": "2cd5fae5-c84b-4dea-af3b-0450c9450fb0",
+    "name": "Cloud & DevOps",
+    "slug": "cloud-devops",
+    "tagline": null,
+    "short_description": "Scalable cloud infrastructure and automated DevOps pipelines",
+    "full_description": "Accelerate your development and deployment with our cloud and DevOps expertise. We build reliable, scalable infrastructure that powers modern applications.",
+    "icon": "cloud",
+    "color": null,
+    "features": [
+      "Cloud Architecture",
+      "CI/CD Pipelines",
+      "Container Orchestration",
+      "Infrastructure as Code",
+      "Monitoring & Logging",
+      "Auto-scaling"
+    ],
+    "technologies": [
+      "AWS",
+      "Azure",
+      "Google Cloud",
+      "Kubernetes",
+      "Docker",
+      "Terraform",
+      "Jenkins",
+      "GitLab CI"
+    ],
+    "use_cases": [
+      "Cloud Migration",
+      "Microservices Architecture",
+      "Serverless Applications",
+      "DevOps Transformation",
+      "Disaster Recovery",
+      "Multi-Cloud Strategy"
+    ],
+    "pricing_model": "Project-based",
+    "starting_price": "From $35,000",
+    "process_steps": {
+      "1": {
+        "title": "Assessment",
+        "description": "Evaluate current infrastructure"
+      },
+      "2": {
+        "title": "Architecture Design",
+        "description": "Plan cloud strategy"
+      },
+      "3": {
+        "title": "Implementation",
+        "description": "Build and configure"
+      },
+      "4": {
+        "title": "Migration",
+        "description": "Move workloads safely"
+      },
+      "5": {
+        "title": "Optimization",
+        "description": "Monitor and improve"
+      }
+    },
+    "case_study_ids": null,
+    "success_rate": 100,
+    "projects_completed": 180,
+    "is_featured": true,
+    "is_active": true,
+    "display_order": 4,
+    "meta_title": "Cloud & DevOps Services | AWS, Azure, GCP | Axis Cyber",
+    "meta_description": "Scalable cloud infrastructure and DevOps automation. AWS, Azure, Google Cloud, Kubernetes, and CI/CD expertise.",
+    "created_at": "2025-12-24T13:30:40.900225+00:00",
+    "updated_at": "2025-12-24T13:30:40.900225+00:00"
+  },
+  {
+    "id": "6d950e7c-8232-4cd2-b472-b708a43dc68b",
+    "name": "Cybersecurity",
+    "slug": "cybersecurity",
+    "tagline": null,
+    "short_description": "Enterprise-grade security solutions to protect your digital assets",
+    "full_description": "Safeguard your business with comprehensive cybersecurity solutions. We protect your data, applications, and infrastructure from evolving threats.",
+    "icon": "shield-check",
+    "color": null,
+    "features": [
+      "Security Audits",
+      "Penetration Testing",
+      "Vulnerability Assessments",
+      "Security Operations Center",
+      "Incident Response",
+      "Compliance Management"
+    ],
+    "technologies": [
+      "SIEM Tools",
+      "IDS/IPS",
+      "Firewalls",
+      "Encryption",
+      "Zero Trust Architecture",
+      "Security Frameworks",
+      "Threat Intelligence"
+    ],
+    "use_cases": [
+      "Security Audits",
+      "Compliance (GDPR, HIPAA)",
+      "Threat Detection",
+      "Data Protection",
+      "Access Management",
+      "Security Training"
+    ],
+    "pricing_model": "Project-based",
+    "starting_price": "From $30,000",
+    "process_steps": {
+      "1": {
+        "title": "Risk Assessment",
+        "description": "Identify vulnerabilities"
+      },
+      "2": {
+        "title": "Security Strategy",
+        "description": "Design security framework"
+      },
+      "3": {
+        "title": "Implementation",
+        "description": "Deploy security controls"
+      },
+      "4": {
+        "title": "Testing",
+        "description": "Validate effectiveness"
+      },
+      "5": {
+        "title": "Monitoring",
+        "description": "Continuous protection"
+      }
+    },
+    "case_study_ids": null,
+    "success_rate": 100,
+    "projects_completed": 120,
+    "is_featured": true,
+    "is_active": true,
+    "display_order": 5,
+    "meta_title": "Cybersecurity Services | Security Audits & Protection | Axis Cyber",
+    "meta_description": "Enterprise cybersecurity solutions. Security audits, penetration testing, compliance, and threat protection.",
+    "created_at": "2025-12-24T13:30:40.900225+00:00",
+    "updated_at": "2025-12-24T13:30:40.900225+00:00"
+  },
+  {
+    "id": "b059929b-ff0e-4ea5-97a1-77bab81805dd",
+    "name": "Blockchain Development",
+    "slug": "blockchain",
+    "tagline": null,
+    "short_description": "Decentralized solutions using blockchain and smart contract technology",
+    "full_description": "Build the future with blockchain technology. We create secure, transparent, and decentralized solutions that transform industries.",
+    "icon": "link",
+    "color": null,
+    "features": [
+      "Smart Contracts",
+      "DApp Development",
+      "NFT Platforms",
+      "DeFi Solutions",
+      "Tokenization",
+      "Blockchain Consulting"
+    ],
+    "technologies": [
+      "Ethereum",
+      "Solidity",
+      "Web3.js",
+      "Hardhat",
+      "IPFS",
+      "Polygon",
+      "Hyperledger",
+      "Truffle"
+    ],
+    "use_cases": [
+      "Cryptocurrency Wallets",
+      "NFT Marketplaces",
+      "Supply Chain Tracking",
+      "Digital Identity",
+      "Voting Systems",
+      "DeFi Platforms"
+    ],
+    "pricing_model": "Project-based",
+    "starting_price": "From $60,000",
+    "process_steps": {
+      "1": {
+        "title": "Blockchain Strategy",
+        "description": "Define use case and platform"
+      },
+      "2": {
+        "title": "Smart Contract Development",
+        "description": "Code and test contracts"
+      },
+      "3": {
+        "title": "DApp Development",
+        "description": "Build user interfaces"
+      },
+      "4": {
+        "title": "Security Audit",
+        "description": "Audit smart contracts"
+      },
+      "5": {
+        "title": "Deployment",
+        "description": "Launch on mainnet"
+      }
+    },
+    "case_study_ids": null,
+    "success_rate": 100,
+    "projects_completed": 80,
+    "is_featured": true,
+    "is_active": true,
+    "display_order": 6,
+    "meta_title": "Blockchain Development | Smart Contracts & DApps | Axis Cyber",
+    "meta_description": "Build decentralized applications with blockchain technology. Smart contracts, NFTs, DeFi, and Web3 solutions.",
+    "created_at": "2025-12-24T13:30:40.900225+00:00",
+    "updated_at": "2025-12-24T13:30:40.900225+00:00"
+  },
+  {
+    "id": "5acae01f-da04-4e64-bfaa-19899df2c732",
+    "name": "IoT & Edge Computing",
+    "slug": "iot-edge",
+    "tagline": null,
+    "short_description": "Connected devices and edge computing solutions for the smart future",
+    "full_description": "Connect the physical and digital worlds with IoT and edge computing. We build intelligent systems that collect, process, and act on data in real-time.",
+    "icon": "cpu",
+    "color": null,
+    "features": [
+      "IoT Device Integration",
+      "Edge Computing",
+      "Real-time Analytics",
+      "Device Management",
+      "Sensor Networks",
+      "Industrial IoT"
+    ],
+    "technologies": [
+      "MQTT",
+      "CoAP",
+      "LoRaWAN",
+      "Edge AI",
+      "Time Series Databases",
+      "Arduino",
+      "Raspberry Pi",
+      "Azure IoT"
+    ],
+    "use_cases": [
+      "Smart Cities",
+      "Industrial Automation",
+      "Healthcare Monitoring",
+      "Smart Agriculture",
+      "Asset Tracking",
+      "Predictive Maintenance"
+    ],
+    "pricing_model": "Project-based",
+    "starting_price": "From $45,000",
+    "process_steps": {
+      "1": {
+        "title": "IoT Strategy",
+        "description": "Define device architecture"
+      },
+      "2": {
+        "title": "Hardware Integration",
+        "description": "Connect sensors and devices"
+      },
+      "3": {
+        "title": "Edge Processing",
+        "description": "Build edge computing logic"
+      },
+      "4": {
+        "title": "Cloud Integration",
+        "description": "Connect to cloud platforms"
+      },
+      "5": {
+        "title": "Monitoring",
+        "description": "Real-time dashboard"
+      }
+    },
+    "case_study_ids": null,
+    "success_rate": 100,
+    "projects_completed": 90,
+    "is_featured": true,
+    "is_active": true,
+    "display_order": 7,
+    "meta_title": "IoT & Edge Computing Solutions | Axis Cyber Technologies",
+    "meta_description": "Build connected IoT solutions with edge computing. Real-time data processing, device management, and analytics.",
+    "created_at": "2025-12-24T13:30:40.900225+00:00",
+    "updated_at": "2025-12-24T13:30:40.900225+00:00"
+  },
+  {
+    "id": "2bd22fcb-70eb-4f5b-b998-a30d909c0436",
+    "name": "Data Engineering",
+    "slug": "data-engineering",
+    "tagline": null,
+    "short_description": "Big data pipelines and analytics infrastructure for data-driven decisions",
+    "full_description": "Transform raw data into actionable insights with our data engineering expertise. We build robust data pipelines that power your analytics and AI initiatives.",
+    "icon": "database",
+    "color": null,
+    "features": [
+      "Data Warehousing",
+      "ETL Pipelines",
+      "Real-time Streaming",
+      "Data Lake Architecture",
+      "Data Quality",
+      "Analytics Platforms"
+    ],
+    "technologies": [
+      "Apache Spark",
+      "Airflow",
+      "Kafka",
+      "Snowflake",
+      "dbt",
+      "Databricks",
+      "BigQuery",
+      "Redshift"
+    ],
+    "use_cases": [
+      "Data Warehouses",
+      "Real-time Analytics",
+      "Customer 360",
+      "Business Intelligence",
+      "Data Migration",
+      "ML Pipelines"
+    ],
+    "pricing_model": "Project-based",
+    "starting_price": "From $40,000",
+    "process_steps": {
+      "1": {
+        "title": "Data Assessment",
+        "description": "Audit current data landscape"
+      },
+      "2": {
+        "title": "Architecture Design",
+        "description": "Design data infrastructure"
+      },
+      "3": {
+        "title": "Pipeline Development",
+        "description": "Build ETL/ELT processes"
+      },
+      "4": {
+        "title": "Quality Assurance",
+        "description": "Validate data accuracy"
+      },
+      "5": {
+        "title": "Optimization",
+        "description": "Improve performance"
+      }
+    },
+    "case_study_ids": null,
+    "success_rate": 100,
+    "projects_completed": 110,
+    "is_featured": true,
+    "is_active": true,
+    "display_order": 8,
+    "meta_title": "Data Engineering Services | ETL, Data Pipelines | Axis Cyber",
+    "meta_description": "Build scalable data pipelines and analytics infrastructure. ETL, data warehousing, and big data solutions.",
+    "created_at": "2025-12-24T13:30:40.900225+00:00",
+    "updated_at": "2025-12-24T13:30:40.900225+00:00"
+  },
+  {
+    "id": "b34508c1-cf56-4905-a879-1a10cb9a4686",
+    "name": "Enterprise Software",
+    "slug": "enterprise-software",
+    "tagline": null,
+    "short_description": "Custom enterprise solutions that streamline operations and drive growth",
+    "full_description": "Modernize your business with custom enterprise software. We build scalable, secure solutions that integrate seamlessly with your existing systems.",
+    "icon": "building",
+    "color": null,
+    "features": [
+      "ERP Systems",
+      "CRM Platforms",
+      "Workflow Automation",
+      "Business Intelligence",
+      "Integration Services",
+      "Legacy Modernization"
+    ],
+    "technologies": [
+      "SAP",
+      "Salesforce",
+      "Microsoft Dynamics",
+      "Oracle",
+      "ServiceNow",
+      "REST APIs",
+      "SOAP",
+      "Microservices"
+    ],
+    "use_cases": [
+      "ERP Implementation",
+      "CRM Customization",
+      "Process Automation",
+      "System Integration",
+      "Digital Transformation",
+      "Custom Portals"
+    ],
+    "pricing_model": "Project-based",
+    "starting_price": "From $80,000",
+    "process_steps": {
+      "1": {
+        "title": "Business Analysis",
+        "description": "Understand processes and needs"
+      },
+      "2": {
+        "title": "Solution Design",
+        "description": "Architect enterprise system"
+      },
+      "3": {
+        "title": "Development",
+        "description": "Build custom modules"
+      },
+      "4": {
+        "title": "Integration",
+        "description": "Connect with existing systems"
+      },
+      "5": {
+        "title": "Training & Support",
+        "description": "User adoption and maintenance"
+      }
+    },
+    "case_study_ids": null,
+    "success_rate": 100,
+    "projects_completed": 140,
+    "is_featured": true,
+    "is_active": true,
+    "display_order": 9,
+    "meta_title": "Enterprise Software Development | ERP, CRM | Axis Cyber",
+    "meta_description": "Custom enterprise software solutions. ERP, CRM, workflow automation, and digital transformation.",
+    "created_at": "2025-12-24T13:30:40.900225+00:00",
+    "updated_at": "2025-12-24T13:30:40.900225+00:00"
+  },
+  {
+    "id": "ce3e8e28-34c5-4a2e-ad15-04d2b64db97e",
+    "name": "Product & UX Design",
+    "slug": "product-ux",
+    "tagline": null,
+    "short_description": "User-centered design that creates delightful digital experiences",
+    "full_description": "Design products users love with our UX/UI expertise. We create intuitive, beautiful interfaces that drive engagement and conversions.",
+    "icon": "palette",
+    "color": null,
+    "features": [
+      "User Research",
+      "Wireframing & Prototyping",
+      "UI Design",
+      "Usability Testing",
+      "Design Systems",
+      "Accessibility"
+    ],
+    "technologies": [
+      "Figma",
+      "Adobe XD",
+      "Sketch",
+      "InVision",
+      "Principle",
+      "Framer",
+      "Miro",
+      "UserTesting"
+    ],
+    "use_cases": [
+      "Mobile App Design",
+      "Web Application Design",
+      "Design System Creation",
+      "UX Audits",
+      "Redesign Projects",
+      "Accessibility Compliance"
+    ],
+    "pricing_model": "Project-based",
+    "starting_price": "From $20,000",
+    "process_steps": {
+      "1": {
+        "title": "Research",
+        "description": "Understand users and context"
+      },
+      "2": {
+        "title": "Ideation",
+        "description": "Brainstorm and sketch concepts"
+      },
+      "3": {
+        "title": "Prototyping",
+        "description": "Create interactive prototypes"
+      },
+      "4": {
+        "title": "Testing",
+        "description": "Validate with real users"
+      },
+      "5": {
+        "title": "Handoff",
+        "description": "Deliver design system"
+      }
+    },
+    "case_study_ids": null,
+    "success_rate": 100,
+    "projects_completed": 250,
+    "is_featured": true,
+    "is_active": true,
+    "display_order": 10,
+    "meta_title": "Product & UX Design Services | Axis Cyber Technologies",
+    "meta_description": "User-centered UX/UI design services. Research, prototyping, testing, and design systems.",
+    "created_at": "2025-12-24T13:30:40.900225+00:00",
+    "updated_at": "2025-12-24T13:30:40.900225+00:00"
+  },
+  {
+    "id": "7d6d3414-699f-472c-9279-724124ea3f2d",
+    "name": "Gaming & WebGL",
+    "slug": "gaming-webgl",
+    "tagline": null,
+    "short_description": "3D web experiences and interactive gaming solutions",
+    "full_description": "Create immersive gaming and 3D web experiences. We build high-performance graphics applications that run seamlessly in the browser.",
+    "icon": "gamepad",
+    "color": null,
+    "features": [
+      "3D Web Graphics",
+      "Browser Games",
+      "WebGL Development",
+      "Game Engines",
+      "Real-time Rendering",
+      "Multiplayer Systems"
+    ],
+    "technologies": [
+      "Three.js",
+      "WebGL",
+      "Unity",
+      "Babylon.js",
+      "Socket.io",
+      "WebRTC",
+      "GLSL",
+      "Canvas API"
+    ],
+    "use_cases": [
+      "Browser-based Games",
+      "3D Product Visualizers",
+      "Virtual Tours",
+      "Interactive Experiences",
+      "Educational Simulations",
+      "Metaverse Applications"
+    ],
+    "pricing_model": "Project-based",
+    "starting_price": "From $50,000",
+    "process_steps": {
+      "1": {
+        "title": "Concept Design",
+        "description": "Define game mechanics and visuals"
+      },
+      "2": {
+        "title": "Prototyping",
+        "description": "Build playable prototype"
+      },
+      "3": {
+        "title": "Development",
+        "description": "Full game/experience development"
+      },
+      "4": {
+        "title": "Testing",
+        "description": "QA and optimization"
+      },
+      "5": {
+        "title": "Launch",
+        "description": "Deploy and market"
+      }
+    },
+    "case_study_ids": null,
+    "success_rate": 100,
+    "projects_completed": 70,
+    "is_featured": true,
+    "is_active": true,
+    "display_order": 11,
+    "meta_title": "Gaming & WebGL Development | 3D Web Graphics | Axis Cyber",
+    "meta_description": "Build immersive 3D web experiences and browser games with WebGL, Three.js, and Unity.",
+    "created_at": "2025-12-24T13:30:40.900225+00:00",
+    "updated_at": "2025-12-24T13:30:40.900225+00:00"
+  },
+  {
+    "id": "1eae5e82-b687-4cf7-ab29-ac51ec69cfec",
+    "name": "Performance Optimization",
+    "slug": "performance-optimization",
+    "tagline": null,
+    "short_description": "Speed up your applications and reduce infrastructure costs",
+    "full_description": "Maximize performance and minimize costs with our optimization expertise. We make your applications faster, more efficient, and more scalable.",
+    "icon": "zap",
+    "color": null,
+    "features": [
+      "Code Optimization",
+      "Database Tuning",
+      "Caching Strategies",
+      "CDN Integration",
+      "Load Balancing",
+      "Performance Monitoring"
+    ],
+    "technologies": [
+      "Lighthouse",
+      "WebPageTest",
+      "New Relic",
+      "DataDog",
+      "Redis",
+      "Varnish",
+      "Cloudflare",
+      "nginx"
+    ],
+    "use_cases": [
+      "Website Speed Optimization",
+      "Database Performance",
+      "API Optimization",
+      "Mobile Performance",
+      "Infrastructure Scaling",
+      "Cost Reduction"
+    ],
+    "pricing_model": "Project-based",
+    "starting_price": "From $15,000",
+    "process_steps": {
+      "1": {
+        "title": "Performance Audit",
+        "description": "Identify bottlenecks"
+      },
+      "2": {
+        "title": "Optimization Plan",
+        "description": "Prioritize improvements"
+      },
+      "3": {
+        "title": "Implementation",
+        "description": "Apply optimizations"
+      },
+      "4": {
+        "title": "Testing",
+        "description": "Measure improvements"
+      },
+      "5": {
+        "title": "Monitoring",
+        "description": "Ongoing performance tracking"
+      }
+    },
+    "case_study_ids": null,
+    "success_rate": 100,
+    "projects_completed": 160,
+    "is_featured": true,
+    "is_active": true,
+    "display_order": 12,
+    "meta_title": "Performance Optimization Services | Axis Cyber Technologies",
+    "meta_description": "Speed up applications and reduce costs. Code optimization, caching, CDN, and infrastructure tuning.",
+    "created_at": "2025-12-24T13:30:40.900225+00:00",
+    "updated_at": "2025-12-25T15:48:00.909407+00:00"
+  },
+  {
+    "id": "e16e57cc-5ff2-40b8-9b3f-912da1b84596",
+    "name": "AI & Machine Learning",
+    "slug": "ai-ml",
+    "tagline": null,
+    "short_description": "Intelligent systems powered by cutting-edge AI and machine learning algorithms",
+    "full_description": "Transform your business with advanced AI and machine learning solutions. We build intelligent systems that learn, adapt, and deliver actionable insights to drive innovation and efficiency.",
+    "icon": "brain-circuit",
+    "color": null,
+    "features": [
+      "Deep Learning Models",
+      "Natural Language Processing",
+      "Computer Vision",
+      "Predictive Analytics",
+      "Neural Networks",
+      "Model Training & Optimization"
+    ],
+    "technologies": [
+      "TensorFlow",
+      "PyTorch",
+      "Scikit-learn",
+      "Keras",
+      "OpenCV",
+      "Hugging Face",
+      "ONNX",
+      "MLflow"
+    ],
+    "use_cases": [
+      "Chatbots & Virtual Assistants",
+      "Fraud Detection",
+      "Recommendation Engines",
+      "Image Recognition",
+      "Sentiment Analysis",
+      "Demand Forecasting"
+    ],
+    "pricing_model": "Project-based",
+    "starting_price": "From $50,000",
+    "process_steps": {
+      "1": {
+        "title": "Discovery & Data Assessment",
+        "description": "Analyze your data and define objectives"
+      },
+      "2": {
+        "title": "Model Development",
+        "description": "Build and train custom AI models"
+      },
+      "3": {
+        "title": "Testing & Validation",
+        "description": "Validate accuracy and performance"
+      },
+      "4": {
+        "title": "Deployment & Integration",
+        "description": "Deploy models into production"
+      },
+      "5": {
+        "title": "Monitoring & Optimization",
+        "description": "Continuous improvement and retraining"
+      }
+    },
+    "case_study_ids": null,
+    "success_rate": 100,
+    "projects_completed": 150,
+    "is_featured": true,
+    "is_active": true,
+    "display_order": 1,
+    "meta_title": "AI & Machine Learning Services | Axis Cyber Technologies",
+    "meta_description": "Transform your business with advanced AI and ML solutions. Deep learning, NLP, computer vision, and predictive analytics.",
+    "created_at": "2025-12-24T13:30:40.900225+00:00",
+    "updated_at": "2025-12-30T11:54:46.349503+00:00"
+  }
+]
